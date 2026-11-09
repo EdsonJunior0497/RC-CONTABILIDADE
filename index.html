@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC Contabilidade</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 bg-slate-50 antialiased selection:bg-brand-600 selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-brand-900 text-white text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span><i class="fa-solid fa-phone text-brand-100 mr-2"></i>(21) 97152-0292</span>
+                <span><i class="fa-solid fa-envelope text-brand-100 mr-2"></i>rccontabilidadeadm@hotmail.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-clock text-brand-100 mr-1"></i> Seg - Sex: 08h às 18h</span>
+                <div class="flex gap-3 items-center border-l border-brand-800 pl-4">
+                    <a href="https://instagram.com" target="_blank" class="hover:text-brand-100 transition"><i class="fa-brands fa-instagram text-sm"></i></a>
+                    <a href="https://wa.me/5521971520292" target="_blank" class="hover:text-brand-100 transition"><i class="fa-brands fa-whatsapp text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 bg-white/95 backdrop-blur-md z-40 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo Space -->
+                <a href="#" class="flex items-center gap-3">
+                    <img src="LOGO.png" alt="RC Contabilidade" class="h-16 w-auto object-contain" onError="this.onerror=null; this.remove(); document.getElementById('logo-fallback').classList.remove('hidden');">
+                    <div id="logo-fallback" class="hidden flex items-center gap-2">
+                        <div class="w-10 h-10 rounded-lg bg-brand-700 flex items-center justify-center text-white font-bold text-xl shadow-md">
+                            RC
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-xl font-extrabold tracking-tight text-brand-900 leading-none">RC</span>
+                            <span class="text-xs font-semibold text-brand-600 tracking-widest uppercase">Contabilidade</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition">Início</a>
+                    <a href="#sobre" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition">Sobre</a>
+                    <a href="#servicos" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition">Serviços</a>
+                    <a href="#advocacia" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition">Parceria Jurídica</a>
+                    <a href="#contato" class="text-sm font-medium text-gray-600 hover:text-brand-700 transition">Contato</a>
+                </nav>
+
+                <!-- CTA Header Button -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="https://wa.me/5521971520292?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20RC%20Contabilidade." target="_blank" class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-lg text-white bg-brand-700 hover:bg-brand-800 shadow-md hover:shadow-lg transition">
+                        <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Falar com Especialista
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-b from-brand-50 to-white py-20 lg:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-100 text-brand-800">
+                        <i class="fa-solid fa-shield-halved text-brand-700"></i> Soluções Inteligentes & Perícia Técnica
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                        Gestão Contábil Eficiente para <span class="text-brand-700">Impulsionar seu Negócio</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">
+                        A RC Contabilidade oferece segurança fiscal, soluções para Terceiro Setor, empresas de todos os portes, produtores rurais, pessoas físicas e perícia contábil especializada para escritórios de advocacia.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="https://wa.me/5521971520292?text=Ol%C3%A1!%20Gostaria%20de%20atendimento%20cont%C3%A1bil." target="_blank" class="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold rounded-lg text-white bg-brand-700 hover:bg-brand-800 shadow-lg hover:shadow-xl transition">
+                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Atendimento via WhatsApp
+                        </a>
+                        <a href="#servicos" class="inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold rounded-lg text-brand-700 bg-white border border-brand-200 hover:bg-brand-50 shadow-sm transition">
+                            Conhecer Nossos Serviços
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 relative z-10">
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 border-b border-gray-100 pb-4">
+                                <div class="w-12 h-12 bg-brand-100 rounded-lg flex items-center justify-center text-brand-700 font-bold text-xl">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900">ONG’S, OSCIPs & Associações</h3>
+                                    <p class="text-xs text-gray-500">Gestão, estatuto e prestação de contas</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 border-b border-gray-100 pb-4">
+                                <div class="w-12 h-12 bg-brand-100 rounded-lg flex items-center justify-center text-brand-700 font-bold text-xl">
+                                    <i class="fa-solid fa-scale-balanced"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900">Perícia & Suporte Jurídico</h3>
+                                    <p class="text-xs text-gray-500">Laudos e cálculos para advogados</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-brand-100 rounded-lg flex items-center justify-center text-brand-700 font-bold text-xl">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900">Empresas & Rurais</h3>
+                                    <p class="text-xs text-gray-500">Simples, Lucro Presumido, Real e CAEPF</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Interactive Tabs Section -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-brand-900 sm:text-4xl">Nossos Serviços Especializados</h2>
+                <p class="mt-4 text-lg text-gray-600">Navegue pelas categorias abaixo para conhecer tudo o que a RC Contabilidade realiza pelo seu negócio.</p>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12" id="services-tabs">
+                <button onclick="switchTab('terceiro-setor')" id="tab-terceiro-setor" class="tab-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-brand-700 text-white shadow-md">
+                    Terceiro Setor
+                </button>
+                <button onclick="switchTab('simples')" id="tab-simples" class="tab-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-gray-100 text-gray-600 hover:bg-brand-50">
+                    Simples Nacional
+                </button>
+                <button onclick="switchTab('lucro')" id="tab-lucro" class="tab-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-gray-100 text-gray-600 hover:bg-brand-50">
+                    Lucro Presumido & Real
+                </button>
+                <button onclick="switchTab('mei')" id="tab-mei" class="tab-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-gray-100 text-gray-600 hover:bg-brand-50">
+                    MEI
+                </button>
+                <button onclick="switchTab('rural')" id="tab-rural" class="tab-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-gray-100 text-gray-600 hover:bg-brand-50">
+                    Produtor Rural
+                </button>
+                <button onclick="switchTab('pf')" id="tab-pf" class="tab-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-gray-100 text-gray-600 hover:bg-brand-50">
+                    Pessoa Física (CPF)
+                </button>
+                <button onclick="switchTab('autonomos')" id="tab-autonomos" class="tab-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-gray-100 text-gray-600 hover:bg-brand-50">
+                    Autônomos
+                </button>
+            </div>
+
+            <!-- Tab Content Container -->
+            <div class="bg-slate-50 p-6 sm:p-10 rounded-2xl border border-gray-200 min-h-[400px]">
+                
+                <!-- Tab 1: Terceiro Setor -->
+                <div id="content-terceiro-setor" class="tab-content space-y-6">
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-2xl font-bold text-brand-900">ONG’S, OSCIPs, Fundações e Associações sem Fins Lucrativos</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">1. Constituição da Entidade</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Elaboração do estatuto social</li>
+                                <li>Cadastro no CNPJ junto à Receita Federal</li>
+                                <li>Registro em cartório</li>
+                                <li>Auxílio para obtenção de títulos (OSCIP, Utilidade Pública)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">2. Escrituração Contábil</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Lançamentos por regime de competência</li>
+                                <li>Balancetes mensais e Balanço Patrimonial</li>
+                                <li>Registro e controle de doações, convênios e despesas</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">3. Gestão Fiscal e Tributária</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Declaração de isenção de impostos (IRPJ e CSLL)</li>
+                                <li>Entrega de obrigações: DCTF e ECF</li>
+                                <li>Acompanhamento de imunidades e isenções fiscais</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">4. Gestão de Pessoal</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Elaboração de folha de pagamento e encargos</li>
+                                <li>Admissões, desligamentos e controle funcional</li>
+                                <li>Envio de informações via eSocial</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">5. Prestação de Contas</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Relatórios financeiros para doadores e órgãos públicos</li>
+                                <li>Prestação de contas de recursos públicos</li>
+                                <li>Demonstrações para conselhos financiadores</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">6. Consultoria e Auditorias</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Orientações sobre compliance contábil e legal</li>
+                                <li>Preparação de documentos para auditoria externa</li>
+                                <li>Emissão de parecer contábil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Simples Nacional -->
+                <div id="content-simples" class="tab-content hidden space-y-6">
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-2xl font-bold text-brand-900">Empresas - Simples Nacional</h3>
+                        <p class="text-gray-600 text-sm">Gestão simplificada e eficiente para micro e pequenas empresas</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">1. Legalização da Empresa</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Abertura, registro na Junta Comercial, CNPJ, Inscrição Municipal/Estadual</li>
+                                <li>Enquadramento no Simples Nacional</li>
+                                <li>Elaboração de Contrato Social e alterações</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">2. Escrituração Contábil</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Registro de movimentações de entradas e saídas</li>
+                                <li>Balancetes e relatórios gerenciais</li>
+                                <li>Controle do Livro Caixa</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">3. Gestão Tributária</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Cálculo e geração do DAS</li>
+                                <li>Apuração por anexo e atividade econômica</li>
+                                <li>Entrega de obrigações: DEFIS, PGDAS-D, eSocial</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">4. Departamento Pessoal</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Folha de pagamento e encargos (INSS, FGTS)</li>
+                                <li>Cálculo de férias, 13º e rescisões</li>
+                                <li>Obrigações via eSocial</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">5. Notas Fiscais & Orientação</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Suporte em NF-e, NFS-e, CFOP, NCM e CNAE</li>
+                                <li>Análise de margem de lucro e precificação</li>
+                                <li>Alterações ou encerramento legal da empresa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Lucro Presumido e Real -->
+                <div id="content-lucro" class="tab-content hidden space-y-6">
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-2xl font-bold text-brand-900">Lucro Presumido & Lucro Real</h3>
+                        <p class="text-gray-600 text-sm">Contabilidade de alta precisão para médio e grande porte</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">1. Escrituração Completa</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Livro Diário, Livro Razão e Balancetes Mensais</li>
+                                <li>Balanço Patrimonial e DRE</li>
+                                <li>Controle patrimonial e depreciação de ativos</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">2. Gestão Fiscal (Lucro Presumido)</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Apuração de IRPJ e CSLL trimestrais</li>
+                                <li>PIS e COFINS cumulativo</li>
+                                <li>SPED Fiscal, EFD-Contribuições e DCTF</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">3. Gestão Fiscal (Lucro Real)</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Apuração do IRPJ e CSLL sobre lucro líquido real</li>
+                                <li>PIS/COFINS não cumulativo com créditos</li>
+                                <li>Entrega do SPED Contábil (ECD) e SPED ECF</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">4. Planejamento & Obrigações</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Simulações de migração tributária</li>
+                                <li>Relatórios gerenciais e indicadores financeiros</li>
+                                <li>Cumprimento de todas as obrigações acessórias</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: MEI -->
+                <div id="content-mei" class="tab-content hidden space-y-6">
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-2xl font-bold text-brand-900">MEI - Microempreendedor Individual</h3>
+                        <p class="text-gray-600 text-sm">Suporte completo para garantir o crescimento do microempreendedor</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">1. Abertura & Guias DAS</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Abertura no Portal, CNAE e Alvará</li>
+                                <li>Geração mensal da guia DAS-MEI</li>
+                                <li>Parcelamento e atualização de débitos</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">2. Declaração Anual & Notas</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Envio da DASN-SIMEI</li>
+                                <li>Apoio para emissão de Notas Fiscais (NFS-e / NF-e)</li>
+                                <li>Cadastro municipal e estadual</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">3. Funcionário & Transição ME</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Registro de 1 funcionário com eSocial</li>
+                                <li>Acompanhamento do limite de faturamento</li>
+                                <li>Suporte para desenquadramento e migração ME</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 5: Produtor Rural -->
+                <div id="content-rural" class="tab-content hidden space-y-6">
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-2xl font-bold text-brand-900">Produtor Rural (Pessoa Física ou Jurídica)</h3>
+                        <p class="text-gray-600 text-sm">Organização contábil e fiscal para o agronegócio</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">1. Formalização & Livro Caixa</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Inscrição no CAEPF (PF) ou CNPJ Rural</li>
+                                <li>Livro Caixa do Produtor Rural</li>
+                                <li>Registro de receitas, compras de insumos e tratores</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">2. Apuração de Tributos</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Cálculo do Funrural e retenções previdenciárias</li>
+                                <li>Declaração de IRPF da Atividade Rural</li>
+                                <li>Folha de pagamento e eSocial de trabalhadores rurais</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">3. Crédito Rural & Financiamento</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Emissão de Balancetes e DREs para bancos</li>
+                                <li>Documentações para PRONAF e PRONAMP</li>
+                                <li>Prestação de contas de empréstimos bancários</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 6: Pessoa Física -->
+                <div id="content-pf" class="tab-content hidden space-y-6">
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-2xl font-bold text-brand-900">Pessoa Física (CPF)</h3>
+                        <p class="text-gray-600 text-sm">Declarações de IRPF, regularizações e patrimônio</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">1. Declaração IRPF</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Declaração Anual de Ajuste do Imposto de Renda</li>
+                                <li>Apuração de bens, investimentos e ganhos de capital</li>
+                                <li>Correção e envio de retificadoras</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">2. Carnê-Leão & Imóveis</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Cálculo de IR sobre aluguéis e pensões</li>
+                                <li>Simulações de venda/compra imobiliária</li>
+                                <li>Investimentos no Brasil e no Exterior</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">3. Regularização junto à Receita</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Suporte em malha fina e intimações</li>
+                                <li>Parcelamento de débitos tributários</li>
+                                <li>Declaração de Saída Definitiva do País</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 7: Autônomos -->
+                <div id="content-autonomos" class="tab-content hidden space-y-6">
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-2xl font-bold text-brand-900">Profissionais Autônomos</h3>
+                        <p class="text-gray-600 text-sm">Médicos, Advogados, Psicólogos, Dentistas, Engenheiros, etc.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">1. Recibos RPA & Carnê-Leão</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Apoio na emissão de Recibos (RPA)</li>
+                                <li>Apuração mensal do Carnê-Leão</li>
+                                <li>Geração da DARF mensal</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">2. Livro Caixa & Deduções</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Organização das despesas ligadas à profissão</li>
+                                <li>Dedução legal para reduzir imposto a pagar</li>
+                                <li>Inscrição no INSS e contribuição individual</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                            <h4 class="font-bold text-brand-800 mb-2">3. Planejamento PF vs PJ</h4>
+                            <ul class="text-sm space-y-1 text-gray-600 list-disc list-inside">
+                                <li>Análise comparativa (Vale a pena abrir CNPJ?)</li>
+                                <li>Abertura e formalização de empresa profissional</li>
+                                <li>Regularização de pendências fiscais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Parceria com Escritórios de Advocacia -->
+    <section id="advocacia" class="py-20 bg-brand-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block px-3 py-1 bg-brand-800 text-brand-100 text-xs font-bold uppercase tracking-wider rounded-full mb-3">Parceria Estratégica</span>
+                <h2 class="text-3xl font-extrabold sm:text-4xl text-white">Serviços Contábeis e Periciais para Advogados</h2>
+                <p class="mt-4 text-lg text-brand-100">Suporte técnico especializado com linguagem jurídica e agilidade em laudos e pareceres.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-brand-800/60 backdrop-blur border border-brand-700 p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white mb-4 font-bold">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Cálculos Processuais</h3>
+                    <ul class="text-xs text-brand-100 space-y-1.5 list-disc list-inside">
+                        <li>Cálculos trabalhistas (iniciais, liquidação e execução)</li>
+                        <li>Atualização monetária e juros legais</li>
+                        <li>Revisão e conferência de cálculos judiciais</li>
+                    </ul>
+                </div>
+                <div class="bg-brand-800/60 backdrop-blur border border-brand-700 p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white mb-4 font-bold">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Laudos & Pareceres</h3>
+                    <ul class="text-xs text-brand-100 space-y-1.5 list-disc list-inside">
+                        <li>Laudos periciais contábeis judiciais</li>
+                        <li>Pareceres técnicos para instrução processual</li>
+                        <li>Apoio técnico em impugnações e defesas</li>
+                    </ul>
+                </div>
+                <div class="bg-brand-800/60 backdrop-blur border border-brand-700 p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white mb-4 font-bold">
+                        <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Revisão & Contratos</h3>
+                    <ul class="text-xs text-brand-100 space-y-1.5 list-disc list-inside">
+                        <li>Revisão de financiamentos e empréstimos bancários</li>
+                        <li>Atualização de PIS/PASEP e débitos</li>
+                        <li>Aplicação de índices (IPCA, INPC, SELIC, TR)</li>
+                    </ul>
+                </div>
+                <div class="bg-brand-800/60 backdrop-blur border border-brand-700 p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white mb-4 font-bold">
+                        <i class="fa-solid fa-sitemap"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Holding & Sucessão</h3>
+                    <ul class="text-xs text-brand-100 space-y-1.5 list-disc list-inside">
+                        <li>Planejamento sucessório empresarial e familiar</li>
+                        <li>Estruturação de holding patrimonial</li>
+                        <li>Análise de balanços e suporte a auditorias</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/5521971520292?text=Ol%C3%A1!%20Sou%20advogado(a)%20e%20gostaria%20de%20firmar%20uma%20parceria%20para%20c%C3%A1lculos/laudos." target="_blank" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-lg text-brand-900 bg-white hover:bg-brand-50 shadow-lg transition">
+                    <i class="fa-brands fa-whatsapp text-xl text-green-600 mr-2"></i> Solicitar Parceria Jurídica
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-brand-900">Fale Conosco</h2>
+                        <p class="mt-2 text-gray-600">Estamos prontos para atender a sua empresa ou demanda pericial.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center text-brand-700 flex-shrink-0">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">WhatsApp Business</h4>
+                                <p class="text-sm text-gray-600">(21) 97152-0292</p>
+                                <a href="https://wa.me/5521971520292" target="_blank" class="text-xs font-semibold text-brand-600 hover:underline">Iniciar conversa &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center text-brand-700 flex-shrink-0">
+                                <i class="fa-brands fa-instagram text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Instagram</h4>
+                                <p class="text-sm text-gray-600">@rccontabilidade</p>
+                                <a href="https://instagram.com" target="_blank" class="text-xs font-semibold text-brand-600 hover:underline">Ver perfil &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-brand-100 rounded-lg flex items-center justify-center text-brand-700 flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">E-mail</h4>
+                                <p class="text-sm text-gray-600">rccontabilidadeadm@hotmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
+                    <form id="contact-form" onsubmit="sendToWhatsapp(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                            <input type="text" id="form-name" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
+                            <input type="email" id="form-email" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
+                            <textarea id="form-message" rows="4" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 bg-brand-700 hover:bg-brand-800 text-white font-bold rounded-lg shadow-md transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Enviar pelo WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-white border-t border-brand-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm text-brand-100">
+            <p>&copy; 2026 RC Contabilidade. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5521971520292?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20RC%20Contabilidade." target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 transition transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        function switchTab(tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(el => el.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(el => {
+                el.classList.remove('bg-brand-700', 'text-white', 'shadow-md');
+                el.classList.add('bg-gray-100', 'text-gray-600');
+            });
+
+            const targetContent = document.getElementById('content-' + tabId);
+            if (targetContent) {
+                targetContent.classList.remove('hidden');
+            }
+
+            const activeBtn = document.getElementById('tab-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-gray-100', 'text-gray-600');
+                activeBtn.classList.add('bg-brand-700', 'text-white', 'shadow-md');
+            }
+        }
+
+        function sendToWhatsapp(event) {
+            event.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const email = document.getElementById('form-email').value;
+            const message = document.getElementById('form-message').value;
+
+            const text = `Olá! Meu nome é ${name} (${email}).%0A%0AMensagem:%0A${message}`;
+            const url = `https://wa.me/5521971520292?text=${text}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
